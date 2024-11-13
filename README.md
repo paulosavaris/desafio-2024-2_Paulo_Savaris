@@ -41,16 +41,16 @@ Deverá ter as seguintes informações preenchidas manualmente pelo usuário:
 * "phone" - Long
 
 **Regras de Negócio**
-* Ao adicionar um novo **PRODUCT**, o usuário deverá informar os parâmetros manuais. Ao persistir o registro, as demais informações supracitadas deverão ser consultadas e salvas à partir dos dados da API.
-* No caso de edição de um **PRODUCT**, o usuário deve ser liberado para alterar os dados livremente.
-* Deve haver uma opção para ressincronizar os dados do **PRODUCT**, à partir da API novamente, alterando apenas os dados os quais condiz.
-* Deve existir um relacionamento entre **PRODUCT** com uma **CATEGORY** e uma **BRAND**, onde um produto pode ter uma categoria e uma marca.
-* Apenas deve ser possivel associar **PRODUCT** a uma **CATEGORY** em que o parâmetro "active", seja TRUE.
-* Apenas deve ser possivel associar **PRODUCT** a uma **BRAND** em que o parâmetro "active", seja TRUE.
-* Não deve ser possível excluir **CATEGORY** e **BRAND** que possua um ou mais **PRODUCT** associado.
-* Não deve ser possível inserir um **PRODUCT**, **CATEGORY** ou **BRAND** idêntico a outro já existente.
-* O sistema deverá permitir buscar todos os **PRODUCT** (ativos) armazenados em sua base, filtrando por "name", **BRAND** (ativas) ou **CATEGORY** (ativas), apresentando-os em um mural, onde os registros serão dispostos em cards que contenham as informações armazenadas, de maneira organizada.
-* A aplicação deve ser protegida por um login. Porém, não é necessário que exista uma tela para cadastro de usuários.
+1. Ao adicionar um novo **PRODUCT**, o usuário deverá informar os parâmetros manuais. Ao persistir o registro, as demais informações supracitadas deverão ser consultadas e salvas à partir dos dados da API.
+2. No caso de edição de um **PRODUCT**, o usuário deve ser liberado para alterar os dados livremente.
+3. Deve haver uma opção para ressincronizar os dados do **PRODUCT**, à partir da API novamente, alterando apenas os dados os quais condiz.
+4. Deve existir um relacionamento entre **PRODUCT** com uma **CATEGORY** e uma **BRAND**, onde um produto pode ter uma categoria e uma marca.
+5. Apenas deve ser possivel associar **PRODUCT** a uma **CATEGORY** em que o parâmetro "active", seja TRUE.
+6. Apenas deve ser possivel associar **PRODUCT** a uma **BRAND** em que o parâmetro "active", seja TRUE.
+7. Não deve ser possível excluir **CATEGORY** e **BRAND** que possua um ou mais **PRODUCT** associado.
+8. Não deve ser possível inserir um **PRODUCT**, **CATEGORY** ou **BRAND** idêntico a outro já existente (desconsiderando seu id).
+9. O sistema deverá permitir buscar todos os **PRODUCT** (ativos) armazenados em sua base, filtrando por "name", **BRAND** (ativas) ou **CATEGORY** (ativas), apresentando-os em um mural, onde os registros serão dispostos em cards que contenham as informações armazenadas, de maneira organizada.
+10. A aplicação deve ser protegida por um login. Porém, não é necessário que exista uma tela para cadastro de usuários.
 
 ## TECNOLOGIAS OBRIGATÓRIAS
 * Java 17+;
