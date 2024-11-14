@@ -40,6 +40,9 @@ Deverá ter as seguintes informações preenchidas manualmente pelo usuário:
 * "mail" - String
 * "phone" - Long
 
+Para auxíliar na construção, um modelo ER resumido.
+![Captura de tela 2024-11-14 075214](https://github.com/user-attachments/assets/dbad1764-73e5-4486-887f-8e5f95882d4a)
+
 **Regras de Negócio**
 1. Ao adicionar um novo **PRODUCT**, o usuário deverá informar os parâmetros manuais. Ao persistir o registro, as demais informações supracitadas deverão ser consultadas e salvas à partir dos dados da API.
 2. No caso de edição de um **PRODUCT**, o usuário deve ser liberado para alterar os dados livremente.
@@ -50,7 +53,8 @@ Deverá ter as seguintes informações preenchidas manualmente pelo usuário:
 7. Não deve ser possível excluir **CATEGORY** e **BRAND** que possua um ou mais **PRODUCT** associado.
 8. Não deve ser possível inserir um **PRODUCT**, **CATEGORY** ou **BRAND** idêntico a outro já existente (desconsiderando seu id).
 9. O sistema deverá permitir buscar todos os **PRODUCT** (ativos) armazenados em sua base, filtrando por "name", **BRAND** (ativas) ou **CATEGORY** (ativas), apresentando-os em um mural, onde os registros serão dispostos em cards que contenham as informações armazenadas, de maneira organizada.
-10. A aplicação deve ser protegida por um login. Porém, não é necessário que exista uma tela para cadastro de usuários.
+10. Todos os campos que necessitem de máscara, devem a ter implementada.
+11. A aplicação deve ser protegida por um login. Porém, não é necessário que exista uma tela para cadastro de usuários.
 
 ## TECNOLOGIAS OBRIGATÓRIAS
 * Java 17+;
@@ -59,6 +63,8 @@ Deverá ter as seguintes informações preenchidas manualmente pelo usuário:
 * Thymeleaf;
 * MySQL 5.7.X+;
 * GIT;
+
+Para auxiliar no setup inicial do projeto, você pode utilizar o <a href="https://start.spring.io/">Spring Initializr</a>
 
 ## AVALIAÇÃO
 O código será avaliado de acordo com os seguinte critérios:
