@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Produto</title>
+</head>
+<body>
+    <h1>Criar Produto</h1>
+    <form action="/product/create" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="category">Categoria:</label>
+        <select id="category" name="category">
+            <!-- Opções de categoria -->
+        </select>
+        
+        <label for="brand">Marca:</label>
+        <select id="brand" name="brand">
+            <!-- Opções de marca -->
+        </select>
+
+        <label for="active">Ativo:</label>
+        <input type="checkbox" id="active" name="active">
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
